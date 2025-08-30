@@ -1,9 +1,22 @@
-body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #f59e0b;
+    --accent-color: #10b981;
+    --dark-color: #1f2937;
+    --light-color: #f8fafc;
 }
 
-h1 {
-    color: darkblue;
-    text-align: center;
+body {
+    font-family: "Segoe UI";
+    scroll-behavior: smooth;
+}
+
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080');
+    background-size: cover;
+    background-position: center;
+}
+
+.pack-card{
+
 }
