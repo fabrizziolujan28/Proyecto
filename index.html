@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-    <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
-    <meta name="viweport" content="width=device-width, initial-scale=1.0">
-    <title>Anfani Viajes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anfani</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50">
-    <header class="bg-white shadow-md fixed w-full top-0 z-50">
-        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
-<div class="flex items-center">
-            <i class="fas fa-plane-departure text-blue-600 text-2x1 mr-2"></i>
-            <span class="text-xl font-blond text-blue-600">Anfani Viajes</span>
+
+<header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <i class="fas fa-plane-departure text-blue-600 text-2xl mr-2"></i>
+            <span class="text-xl font-bold text-blue-600">Anfani Viajes</span>
         </div>
 
-            <div class="hidden md:flex space-x-8">
-            <a href="#Inicio" class="text gray-700 hover:text-blue-600 transition">Inicio</a>
-            <a href="#Sobre-nosotros" class="text-gray-700 hover:text-blue-600 transition">Sobre Nosotros</a>
-            <a href="#Paquetes" class="text-gray-700 hover:text-blue-600 trnastision">Paquetes</a>
-            <a href="#Testimonios" class="text-gray-700 hover:text-blue-600 trnastision">Testimonios</a>
-            <a href="#Contacto" class="text-gray-700 hover:text-blue-600 trnastision">Contacto</a>
+        <div class="hidden md:flex space-x-8">
+            <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition">Inicio</a>
+            <a href="#sobre-nosotros" class="text-gray-700 hover:text-blue-600 transition">Sobre Nosotros</a>
+            <a href="#paquetes" class="text-gray-700 hover:text-blue-600 transition">Paquetes</a>
+            <a href="#testimonios" class="text-gray-700 hover:text-blue-600 transition">Testimonios</a>
+            <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition">Contacto</a>
         </div>
-    <!boton>
-            <div class="flex items-center space-x-4">
-            <!proximamente>
+
+
+        <div class="flex items-center space-x-4">
+
             <button onclick="openLoginModal()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
                 <i class="fas fa-user mr-2"></i>Login
             </button>
 
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <div id="mobile-menu" class="md:hidden bg-white shadow-lg hidden">
+        <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition">Inicio</a>
+            <a href="#sobre-nosotros" class="text-gray-700 hover:text-blue-600 transition">Sobre Nosotros</a>
+            <a href="#paquetes" class="text-gray-700 hover:text-blue-600 transition">Paquetes</a>
+            <a href="#testimonios" class="text-gray-700 hover:text-blue-600 transition">Testimonios</a>
+            <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition">Contacto</a>
+        </div>
+    </div>
+</header>
+
+
+<section id="inicio" class="hero min-h-screen flex items-center pt-20">
+    <div class="container mx-auto px-4 text-center text-white animate-fadeIn">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Diseñamos experiencias</h1>
+        <p class="text-xl md:text-2xl mb-8">Una forma distinta de ver el mundo</p>
+        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+            <a href="#paquetes" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition">
+                Explorar Destinos
+            </a>
+            <a href="#contacto" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition">
+                Contactar Ahora
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section id="sobre-nosotros" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Sobre Nosotros</h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate-fadeIn">
+                <img src="https://mundi-gea-prod.s3.amazonaws.com/images/q73wos8phzvprzcrxftb_1753823470888.jpg" alt=" logo" class="rounded-lg shadow-lg">
             </div>
-        </nav>
-
-    </header>
-
-    <section id="inicio" class="hero min-h-screen flex items-center pt-20">
-       <div class="container mx-auto px-4 text-center text-white animate-fadeIn">
-           <h1 class="text-4x1 md:text-6x1 font-bold mb-6">Diseñamos experiencias</h1>
-           <p class="text-x1 md:text-2x1 mb-8">Una forma distinta de ver el mundo</p>
-           <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-           <a href="#Paquetes" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition">
-               Explorar Destinos
-           </a>
-               <a href="#Contacto" class="bg-transparent border-2 border white hover:text-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition">
-               Contactar Ahora
-               </a>
-           </div>
-       </div>
-    </section>
-
-    <section id="Sobre nosotros" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3x1 md:text-4x1 font-bold text-center mb-12 text-gray-800">Sobre Nosotros</h2>
-
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="animate-fadeIn">
-                    <img src="https://mundi-gea-prod.s3.amazonaws.com/images/q73wos8phzvprzcrxftb_1753823470888.jpg" alt="logo de empresa" class="rounded-lg shadow-lg">
-                </div>
 
             <div class="animate-fadeIn">
-                <h3 class="text-2x1 font-semibold mb-4 text-blue-600">Tu Compañero de Viajes de Confianza</h3>
+                <h3 class="text-2xl font-semibold mb-4 text-blue-600">Tu Compañero de Viaje de Confianza</h3>
                 <p class="text-gray-600 mb-4">
                     Con mas de 30 años de experiencia en el sector. Brindamos asesoría personalizada y de calidad. Venta de Boletos Aéreos Nacionales e Internacionales, Hoteles, Tours, Cruceros.
                 </p>
@@ -75,112 +90,150 @@
 
                 <div class="grid grid-cols-2 gap-6 mb-6">
                     <div class="text-center">
-                        <div class="text-3x1 font-bold text-blue-600">30+</div>
+                        <div class="text-3xl font-bold text-blue-600">15+</div>
                         <div class="text-gray-600">Años de Experiencia</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3x1 font-bold text-blue-600">50+</div>
+                        <div class="text-3xl font-bold text-blue-600">50+</div>
                         <div class="text-gray-600">Destinos</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3x1 font-bold text-blue-600">10k+</div>
-                        <div class="text-gray-600">Clientes satisfechos</div>
+                        <div class="text-3xl font-bold text-blue-600">10k+</div>
+                        <div class="text-gray-600">Clientes Satisfechos</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3x1 font-bold text-blue-600">24/7</div>
+                        <div class="text-3xl font-bold text-blue-600">24/7</div>
                         <div class="text-gray-600">Soporte</div>
                     </div>
                 </div>
 
-
-            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition">
-                Conoce Más
-            </button>
-                </div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition">
+                    Conoce Más
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="Paquetes" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3x1 md:text-4x1 font-bold text-center mb-4 text-gray-800">Paquetes de Viaje</h2>
-            <p class="text-x1 text-center text-gray-600 mb-12">Descubre nuestro paquetes exclusivos para tu proxima aventura</p>
 
+<section id="paquetes" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Paquetes de Viaje</h2>
+        <p class="text-xl text-center text-gray-600 mb-12">Descubre nuestros paquetes exclusivos para tu próxima aventura</p>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="package-card bg-white rounded-lg overflow-hidden shadow_lg">
-                <div class="packge-imagen relative">
+
+            <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="package-image relative">
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb64cc6e-01d3-4f64-928f-100723d7fee9.png" alt="Playa paradisíaca con aguas turquesas y palmeras en Bali, Indonesia" class="w-full h-48 object-cover">
                     <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
                         USD 899
                     </div>
                 </div>
-
                 <div class="p-6">
-                    <h3 class="text-x1 font-semibold mb-2">Paraiso en Bali</h3>
-                    <p class="text-gray-600 mb-4">7 días y 6 noches en el corazon de Indonesia </p>
+                    <h3 class="text-xl font-semibold mb-2">Paraíso en Bali</h3>
+                    <p class="text-gray-600 mb-4">7 días y 6 noches en el corazón de Indonesia</p>
 
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
-                    <span class="text-gray-600">Bali, Indondesia</span>
-                </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                        <span class="text-gray-600">Bali, Indonesia</span>
+                    </div>
 
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-calendar text-blue-600 mr-2"></i>
-                    <span class="text-gray-600">7 Días / 6 Noches</span>
-                </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar text-blue-600 mr-2"></i>
+                        <span class="text-gray-600">7 Días / 6 Noches</span>
+                    </div>
 
-                <div class="flex justify-between items-center mb-4">
-                    <div class="flex items-center"></div>
-                    <i class="fas fa-star text-yellow-400"></i>
-                    <span class="m1-1 text-gray-600">4.8 (256 reseñas)</span>
-                </div>
-                </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="ml-1 text-gray-600">4.8 (256 reseñas)</span>
+                        </div>
+                    </div>
 
-<button onclick="openRervationModal('Paraiso en Bali'.899)" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
-    Reservar Ahora
-</button>
+                    <button onclick="openReservationModal('Paraíso en Bali', 899)" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                        Reservar Ahora
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paquete 2 -->
+            <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="package-image relative">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/57733cd7-b2d4-4a1c-809c-ff8b590e4405.png" alt="Vista panorámica de París con la Torre Eiffel al atardecer, ciudad iluminada" class="w-full h-48 object-cover">
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
+                        USD 1,299
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Romance en París</h3>
+                    <p class="text-gray-600 mb-4">5 días en la ciudad del amor</p>
+
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                        <span class="text-gray-600">París, Francia</span>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar text-blue-600 mr-2"></i>
+                        <span class="text-gray-600">5 Días / 4 Noches</span>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="ml-1 text-gray-600">4.9 (312 reseñas)</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openReservationModal('Romance en París', 1299)" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                        Reservar Ahora
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="package-image relative">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f02c8142-fd33-49a2-ba70-c6e815d6011e.png" alt="Aventura en safari africano con elefantes y paisaje de sabana al atardecer" class="w-full h-48 object-cover">
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
+                        USD 1,599
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Safari Africano</h3>
+                    <p class="text-gray-600 mb-4">8 días de aventura en la sabana</p>
+
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                        <span class="text-gray-600">Kenia, África</span>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar text-blue-600 mr-2"></i>
+                        <span class="text-gray-600">8 Días / 7 Noches</span>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="ml-1 text-gray-600">4.7 (189 reseñas)</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openReservationModal('Safari Africano', 1599)" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                        Reservar Ahora
+                    </button>
+                </div>
             </div>
         </div>
 
-<div class="package-card bg-white rounded-lg overflow-hidden shadow_lg">
-    <div class="packge-imagen relative"></div>
-    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/57733cd7-b2d4-4a1c-809c-ff8b590e4405.png" alt="Vista Panorámica de Paris con la Torre Eiffel al atardecer, cuidad iluminada" class="w-full h-48 object-cover">
-    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full">
-        USD 1,299
-    </div>
-</div>
-<div class="p-6">
-    <h3 class="text-x1 font-semibold mb-2">Romance en París</h3>
-    <p class="text-gray-600 mb-4">5 Días en la ciudad del amor</p>
-
-    <div class="flex items-center mb-4"></div>
-    <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
-    <span class="text-gray-600">París, Francia</span>
-</div>
-
-    <div class="flex items-center mb-4">
-        <i class="fas fa-calendar text-blue-600 mr-2"></i>
-        <span class="text-gray-600">5 Días / 4 Noches</span>
-    </div>
-
-    <div class="flex justify-between items-center mb-4">
-            <div class="flex items-center">
-                <i class="fas fa-star text-yellow-400"></i>
-                <span class="m1-1 text-gray-600">4.9 (312 reseñas)</span>
-            </div>
+        <div class="text-center mt-12">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition">
+                Ver Todos los Paquetes
+            </button>
         </div>
-
-    <button onclick="openReservationModal('Romance en París, 1299)" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
-        Reservar Ahora
-    </button>
-  </div>
-</div>
+    </div>
+</section>
 
 
-    </section>
-
-
-<script src="js/script.js"></script>
-</body>
-</html>
