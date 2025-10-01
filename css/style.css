@@ -5,18 +5,15 @@
     --dark-color: #1f2937;
     --light-color: #f8fafc;
 }
-
 body {
-    font-family: "Segoe UI";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
 }
-
-.hero{
+.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080');
     background-size: cover;
     background-position: center;
 }
-
-.pack-card{
-
+.package-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
