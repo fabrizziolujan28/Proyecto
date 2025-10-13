@@ -1,19 +1,45 @@
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #f59e0b;
-    --accent-color: #10b981;
-    --dark-color: #1f2937;
-    --light-color: #f8fafc;
+    --primary: #2563eb;
+    --dark: #1e3a8a;
+    --light: #f9fafb;
+    --text: #1f2937;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
 }
+.nav-link{
+    color: var(--text)
+    transition: 0.3s;
+    }
+
+.nav-link:hover {color: var (--primary);}
+
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
 }
+.btn-primary{
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3;
+    }
+
+.btn-primary:hover{
+    background: var(--dark);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+    }
+
+.btn-secondary{
+    border: 2px solid white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s
+    }
 .package-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
