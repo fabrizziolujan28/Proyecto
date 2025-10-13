@@ -40,6 +40,11 @@ body {
     border-radius: 0.5rem;
     transition: 0.3s
     }
+
+.btn-secondary:hover{
+    background: white;
+    color: var(--primary);
+    }
 .package-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
