@@ -66,3 +66,19 @@ body {
     transition: 0.4s;
     }
 
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.price-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+}
+
