@@ -128,3 +128,20 @@ body {
   color: var(--primary);
   margin-bottom: 1.5rem;
 }
+
+.login-card input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+.login-card .extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
