@@ -154,3 +154,23 @@ body {
 
 .counter-box {
   text-align: center;
+
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+  }
+
+  /* Botón volver arriba */
+  #topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    padding: 0.75rem;
+    display: none;
+    transition: 0.3s;
+  }
+  #topBtn:hover { transform: scale(1.15); }
