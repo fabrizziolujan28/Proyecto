@@ -161,7 +161,7 @@ body {
     color: var(--primary);
   }
 
-  /* Botón volver arriba */
+
   #topBtn {
     position: fixed;
     bottom: 30px;
