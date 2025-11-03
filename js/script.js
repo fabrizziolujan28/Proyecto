@@ -31,3 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(e => e.isIntersecting && (animateCounters(), obs.disconnect()));
   });
   obs.observe(document.querySelector("#sobre-nosotros"));
+
+  const topBtn = document.createElement("button");
+  topBtn.id = "topBtn";
+  topBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+  document.body.appendChild(topBtn);
+  window.addEventListener("scroll", () => {
+    topBtn.style.display = window.scrollY > 400 ? "block" : "none";
+  });
+  topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
