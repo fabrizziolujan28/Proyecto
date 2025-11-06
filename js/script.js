@@ -50,3 +50,5 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.appendChild(alert);
             setTimeout(() => alert.remove(), 3000);
           };
+
+  const form = document.getElementById("contact-form");
