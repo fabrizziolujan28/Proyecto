@@ -45,4 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const alert = document.createElement("div");
       alert.className = `fixed top-5 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg text-white shadow-lg z-50 ${
         type === "success" ? "bg-green-500" : "bg-red-500"
-      }
+      } animate-fadeIn`;
+            alert.textContent = msg;
+            document.body.appendChild(alert);
+            setTimeout(() => alert.remove(), 3000);
+          };
