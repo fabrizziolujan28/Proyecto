@@ -63,3 +63,5 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
     }
   });
+
+  const loginForm = document.getElementById("login-form");
