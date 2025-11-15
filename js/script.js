@@ -68,4 +68,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loginForm?.addEventListener("submit", e => {
    e.preventDefault();
    const email = document.getElementById("login-email").value;
+   const pass = document.getElementById("login-password").value;
   }
