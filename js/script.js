@@ -69,4 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
    e.preventDefault();
    const email = document.getElementById("login-email").value;
    const pass = document.getElementById("login-password").value;
+
+     if (email === "admin@viajes.com" && pass === "123456") {
+
+     }
   }
