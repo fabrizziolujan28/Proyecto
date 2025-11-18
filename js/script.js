@@ -72,5 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
      if (email === "admin@viajes.com" && pass === "123456") {
     localStorage.setItem("userName", "Administrador");
+    showAlert("Inicio de sesión exitoso", "success");
      }
   }
