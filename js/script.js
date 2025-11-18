@@ -71,6 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
    const pass = document.getElementById("login-password").value;
 
      if (email === "admin@viajes.com" && pass === "123456") {
-
+    localStorage.setItem("userName", "Administrador");
      }
   }
