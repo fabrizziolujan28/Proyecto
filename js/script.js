@@ -70,9 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
    const email = document.getElementById("login-email").value;
    const pass = document.getElementById("login-password").value;
 
-     if (email === "admin@viajes.com" && pass === "123456") {
-    localStorage.setItem("userName", "Administrador");
-    showAlert("Inicio de sesión exitoso", "success");
-    setTimeout(() => (window.location.href = "index.html"), 1000);
-     }
-  }
+    if (email === "admin@viajes.com" && pass === "123456") {
+      localStorage.setItem("userName", "Administrador");
+      showAlert("Inicio de sesión exitoso", "success");
+      setTimeout(() => (window.location.href = "index.html"), 1000);
+    } else {
+      showAlert("Credenciales incorrectas", "error");
+    }
+  });
