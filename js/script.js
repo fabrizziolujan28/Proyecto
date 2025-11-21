@@ -78,3 +78,5 @@ document.addEventListener("DOMContentLoaded", () => {
       showAlert("Credenciales incorrectas", "error");
     }
   });
+
+  const userName = localStorage.getItem("userName");
