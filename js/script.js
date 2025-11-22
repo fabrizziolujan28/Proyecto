@@ -80,3 +80,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const userName = localStorage.getItem("userName");
+  const loginBtn = document.getElementById("login-btn");
