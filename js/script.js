@@ -82,3 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userName = localStorage.getItem("userName");
   const loginBtn = document.getElementById("login-btn");
   const loginText = document.getElementById("login-text");
+
+   if (userName && loginText) {
+
+   }
