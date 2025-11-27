@@ -84,5 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginText = document.getElementById("login-text");
 
    if (userName && loginText) {
-
+    loginText.textContent = `Cerrar sesión`;
+    loginBtn.classList.remove("btn-primary");
    }
