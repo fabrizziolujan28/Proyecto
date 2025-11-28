@@ -86,4 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
    if (userName && loginText) {
     loginText.textContent = `Cerrar sesión`;
     loginBtn.classList.remove("btn-primary");
+    loginBtn.classList.add("bg-red-500", "hover:bg-red-600");
    }
